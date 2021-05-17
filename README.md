@@ -1,13 +1,13 @@
-fis3-preprocessor-replacer [![NPM Version](https://img.shields.io/npm/v/fis3-preprocessor-replacer.svg?style=flat)](https://npmjs.org/package/fis3-preprocessor-replacer)
+fis3-parser-replacer [![NPM Version](https://img.shields.io/npm/v/fis3-parser-replacer.svg?style=flat)](https://npmjs.org/package/fis3-parser-replacer)
 ======
-> A preprocessor for fis3 to replace string content
+> A parser for fis3 to replace string content
 
 ## How to use
 
 ### Install
 
 ```shell
-npm install fis3-preprocessor-replacer --save-dev
+npm install fis3-parser-replacer --save-dev
 ```
 
 ### Add configure to fis-conf.js
@@ -15,7 +15,7 @@ npm install fis3-preprocessor-replacer --save-dev
 ```js
 // using single replace rule
 fis.match('src/**.js', {
-    preprocessor: fis.plugin('replacer', {
+    parser: fis.plugin('replacer', {
         from: /xxx/g, // or string
         to: 'xxx'
     })
@@ -23,7 +23,7 @@ fis.match('src/**.js', {
 
 // using multiple replace rules
 fis.match('src/**.js', {
-    preprocessor: fis.plugin('replacer', {
+    parser: fis.plugin('replacer', {
         rules: [
             {
                 from: /xxx/g, // or string
