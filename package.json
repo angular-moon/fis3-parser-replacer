@@ -1,6 +1,6 @@
 {
   "name": "fis3-parser-replacer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A parser for fis3 to replace string content",
   "main": "index.js",
   "publishConfig": {
